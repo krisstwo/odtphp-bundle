@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * Coffee & Brackets software studio
+ * 
+ * (c) Mohamed KRISTOU <krisstwo@gmail.com>
+ * 
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Krisstwo\OdtPHPBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
@@ -6,6 +16,9 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
+/**
+ * @author Mohamed KRISTOU <krisstwo@gmail.com>
+ */
 class OdtPHPExtension extends Extension
 {
     /**
@@ -17,7 +30,7 @@ class OdtPHPExtension extends Extension
     {
         $loader = new YamlFileLoader(
             $container,
-            new FileLocator(__DIR__.'/../Resources/config/')
+            new FileLocator(__DIR__ . '/../Resources/config/')
         );
         $loader->load('services.yaml');
     }
