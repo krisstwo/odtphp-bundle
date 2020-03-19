@@ -1,0 +1,6 @@
+services:
+    Krisstwo\OdtPHPBundle\Factory\OdfFactory: ~
+
+    odtphp.factory: '@Krisstwo\OdtPHPBundle\Factory\OdfFactory'
+
+    
